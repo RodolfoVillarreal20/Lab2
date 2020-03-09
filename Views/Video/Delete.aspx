@@ -4,10 +4,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Delete</title>
 </head>
 <body>
-    <h1>
-        OPERACION REALIZADA CON EXITO</h1>
+<form action="/Video/Delete" method="post">
+    <fieldset>
+       
+
+     <Label for="idvideo">idVideo</label> 
+    <input type="Text" name="idvideo" value=" " />
+
+
+    <input type="submit" value="Eliminar " />
+    
+    </fieldset>
+    </form>
+    
 </body>
 </html>
