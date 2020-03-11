@@ -30,7 +30,7 @@ EXEC sp_Video_Eliminar '2'
 
 
 
-ALTER PROCEDURE sp_Video_Update
+CREATE PROCEDURE sp_Video_Update
 @idvideo int,
 @titulo varchar(100),
 @reproducciones int,
@@ -50,6 +50,8 @@ END
 exec sp_Video_mostrar
 
 
+SELECT * FROM VIDEO
+SELECT * FROM video
 
 
 

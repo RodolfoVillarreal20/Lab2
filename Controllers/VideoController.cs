@@ -82,17 +82,14 @@ namespace MVCLaboratorio.Controllers
         }
         public ActionResult Mostrar()
         {
+            ViewData["video"] = BaseHelper.ejecutarSentencia("sp_Video_mostrar", CommandType.StoredProcedure);
+
             return View();
+
+            return View();
+            
         }
-        [HttpPost]
-        public ActionResult Mostrar(int idvideo,
-                                    string titulo,
-                                    int reproducciones,
-                                    string url)
-        {
-            BaseHelper.ejecutarSentencia("sp_video_Modificar", CommandType.StoredProcedure);
-            return RedirectToAction("Index", "Video");
-        }
+        
 
     }
 }
